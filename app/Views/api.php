@@ -22,9 +22,9 @@
   </tbody>
 </table>
 <table class="table table-dark">
-  <thead>
+  <thead style="background: crimson;">
     <tr>
-     <td colspan="2"><h2>Country Data</h2></td>
+     <td colspan="2"><h2>Corona Virus Api Country Wise Data</h2></td>
     </tr>
     <tr>
      <th>No.</th>
@@ -67,7 +67,7 @@ $(document).ready(function(){
             $.each(data.Countries,function(key,value)
             {
                 console.log(key+":"+value);
-                $("#country_data").append("<tr><td>"+key+"</td><td>"+value.Country+"</td><td>"+value.CountryCode+"</td><td>"+value.NewConfirmed+"</td><td>"+value.NewDeaths+"</td><td>"+value.NewRecovered+"</td><td>"+value.TotalConfirmed+"</td><td>"+value.TotalDeaths+"</td><td>"+value.TotalRecovered+"</td></tr>");
+                $("#country_data").append("<tr><td style='background:#33cc00'>"+key+"</td><td style='background:#003366'>"+value.Country+"</td><td style='background:#1a1aff'>"+value.CountryCode+"</td><td style='background:#e6e600'>"+value.NewConfirmed+"</td><td style='background:#ff3300'>"+value.NewDeaths+"</td><td style='background:#6e466b'>"+value.NewRecovered+"</td><td style='background:#ff9900'>"+value.TotalConfirmed+"</td><td style='background:red'>"+value.TotalDeaths+"</td><td style='background:#40343b94'>"+value.TotalRecovered+"</td></tr>");
 
             });
          }
