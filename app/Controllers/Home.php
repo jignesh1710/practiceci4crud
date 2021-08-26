@@ -119,4 +119,8 @@ class Home extends BaseController
 			$builder->insert($data);
 		}
 	}
+	public function api()
+	{
+		echo view("api");
+	}
 }
